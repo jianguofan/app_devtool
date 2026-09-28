@@ -1,0 +1,25 @@
+name: devtool_core
+description: >-
+  Microkernel-based in-app debugging toolkit for Flutter. Provides the core
+  kernel and shared infrastructure; each debug capability is a pluggable,
+  toggleable plugin.
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  dio: ">=5.0.0 <6.0.0"
+  path_provider: ">=2.1.0 <3.0.0"
+  shared_preferences: ">=2.2.0 <3.0.0"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:

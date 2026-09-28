@@ -1,0 +1,53 @@
+# --- Dart / Flutter build artifacts ---
+.dart_tool/
+build/
+.packages
+.pub/
+.pub-cache/
+.flutter-plugins
+.flutter-plugins-dependencies
+**/doc/api/
+
+# --- Package lockfiles: libraries don't commit them; the example app does ---
+packages/*/pubspec.lock
+
+# --- Android ---
+**/android/.gradle/
+**/android/local.properties
+**/android/gradlew
+**/android/gradlew.bat
+**/android/**/gradle-wrapper.jar
+**/android/**/GeneratedPluginRegistrant.java
+**/android/captures/
+*.apk
+*.aab
+
+# --- iOS / macOS ---
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/ephemeral/
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Runner/GeneratedPluginRegistrant.*
+**/macos/Flutter/GeneratedPluginRegistrant.swift
+**/macos/Flutter/ephemeral/
+**/macos/Flutter/Generated.xcconfig
+**/macos/Flutter/flutter_export_environment.sh
+
+# --- Web ---
+lib/generated_plugin_registrant.dart
+
+# --- Symbolication / obfuscation ---
+app.*.symbols
+app.*.map.json
+
+# --- IDE / OS ---
+.idea/
+*.iml
+.vscode/
+.DS_Store
+*.log
+*.swp

@@ -1,0 +1,23 @@
+name: devtool
+description: >-
+  Aggregated in-app debugging toolkit for Flutter. Re-exports the safe core;
+  dangerous capabilities (devtool_h5, devtool_native) are opt-in add-ons.
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  devtool_core:
+    path: ../devtool_core
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:

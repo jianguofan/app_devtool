@@ -1,0 +1,24 @@
+name: devtool_h5
+description: >-
+  H5 debugging capability (arbitrary URL + restricted JS console) for devtool.
+  Depends on flutter_inappwebview; keep this package out of release builds.
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  devtool_core:
+    path: ../devtool_core
+  flutter_inappwebview: ">=6.0.0 <7.0.0"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:

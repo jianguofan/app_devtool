@@ -1,0 +1,27 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        package: [devtool_core, devtool_h5, devtool_native, devtool]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+      - name: Pub get
+        run: flutter pub get
+        working-directory: packages/${{ matrix.package }}
+      - name: Analyze
+        run: flutter analyze
+        working-directory: packages/${{ matrix.package }}
+      - name: Test
+        run: flutter test
+        working-directory: packages/${{ matrix.package }}
